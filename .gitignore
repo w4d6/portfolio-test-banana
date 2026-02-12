@@ -1,0 +1,11 @@
+node_modules/
+.env
+.DS_Store
+generate-images.mjs
+optimize-images.mjs
+package.json
+package-lock.json
+nanobanana_api_usage.md
+design-prompt.yaml
+*.png
+!image/*.png

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Development Portfolio</title>
+  <meta name="description" content="AI開発の実績をまとめたポートフォリオサイト">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#" class="nav__logo">Portfolio</a>
+      <ul class="nav__links">
+        <li><a href="#works">Works</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="nav__hamburger" aria-label="Menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero__bg">
+      <picture>
+        <source srcset="assets/images/hero-bg.webp" type="image/webp">
+        <img src="assets/images/hero-bg.png" alt="" loading="eager">
+      </picture>
+      <div class="hero__overlay"></div>
+    </div>
+    <div class="hero__content">
+      <p class="hero__label">AI Development Portfolio</p>
+      <h1 class="hero__title">
+        AIの力で、<br>
+        未来を形にする。
+      </h1>
+      <p class="hero__subtitle">
+        最先端のAI技術を活用した開発プロジェクトの実績をご紹介します。
+      </p>
+      <div class="hero__actions">
+        <a href="#works" class="btn btn--primary">Works を見る</a>
+        <a href="#contact" class="btn btn--secondary">お問い合わせ</a>
+      </div>
+    </div>
+    <div class="hero__scroll">
+      <span>Scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- Works Section -->
+  <section class="section works" id="works">
+    <div class="container">
+      <div class="section__header">
+        <div class="section__divider"></div>
+        <p class="section__label">Works</p>
+        <h2 class="section__title">開発実績</h2>
+        <p class="section__description">
+          AIを活用した多様なプロジェクトに取り組んできました。
+        </p>
+      </div>
+      <div class="works__grid">
+        <article class="card fade-in" data-delay="0">
+          <div class="card__image">
+            <picture>
+              <source srcset="image/placeholder_1.webp" type="image/webp">
+              <img src="image/placeholder_1.png" alt="Project 1" loading="lazy">
+            </picture>
+            <div class="card__badge">AI Assistant</div>
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">AIチャットアシスタント</h3>
+            <p class="card__text">自然言語処理を活用したインテリジェントなチャットボットの開発。ユーザー体験を大幅に向上。</p>
+            <div class="card__tags">
+              <span class="tag">NLP</span>
+              <span class="tag">Python</span>
+              <span class="tag">React</span>
+            </div>
+          </div>
+        </article>
+        <article class="card fade-in" data-delay="100">
+          <div class="card__image">
+            <picture>
+              <source srcset="image/placeholder_2.webp" type="image/webp">
+              <img src="image/placeholder_2.png" alt="Project 2" loading="lazy">
+            </picture>
+            <div class="card__badge">Image Gen</div>
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">AI画像生成ツール</h3>
+            <p class="card__text">テキストプロンプトから高品質な画像を生成するWebアプリケーション。クリエイティブワークフローを革新。</p>
+            <div class="card__tags">
+              <span class="tag">Diffusion</span>
+              <span class="tag">Node.js</span>
+              <span class="tag">WebGL</span>
+            </div>
+          </div>
+        </article>
+        <article class="card fade-in" data-delay="200">
+          <div class="card__image">
+            <picture>
+              <source srcset="image/placeholder_3.webp" type="image/webp">
+              <img src="image/placeholder_3.png" alt="Project 3" loading="lazy">
+            </picture>
+            <div class="card__badge">Analytics</div>
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">データ分析ダッシュボード</h3>
+            <p class="card__text">機械学習モデルによる予測分析を可視化するインタラクティブダッシュボード。</p>
+            <div class="card__tags">
+              <span class="tag">ML</span>
+              <span class="tag">D3.js</span>
+              <span class="tag">FastAPI</span>
+            </div>
+          </div>
+        </article>
+        <article class="card fade-in" data-delay="0">
+          <div class="card__image">
+            <picture>
+              <source srcset="image/placeholder_4.webp" type="image/webp">
+              <img src="image/placeholder_4.png" alt="Project 4" loading="lazy">
+            </picture>
+            <div class="card__badge">Automation</div>
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">業務自動化システム</h3>
+            <p class="card__text">AIエージェントを活用した業務プロセスの自動化。作業効率を3倍に改善。</p>
+            <div class="card__tags">
+              <span class="tag">LLM</span>
+              <span class="tag">Agent</span>
+              <span class="tag">API</span>
+            </div>
+          </div>
+        </article>
+        <article class="card fade-in" data-delay="100">
+          <div class="card__image">
+            <picture>
+              <source srcset="image/placeholder_5.webp" type="image/webp">
+              <img src="image/placeholder_5.png" alt="Project 5" loading="lazy">
+            </picture>
+            <div class="card__badge">Voice AI</div>
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">音声認識アプリ</h3>
+            <p class="card__text">リアルタイム音声認識と自然言語理解を組み合わせた音声操作インターフェース。</p>
+            <div class="card__tags">
+              <span class="tag">ASR</span>
+              <span class="tag">Whisper</span>
+              <span class="tag">Swift</span>
+            </div>
+          </div>
+        </article>
+        <article class="card fade-in" data-delay="200">
+          <div class="card__image">
+            <picture>
+              <source srcset="image/placeholder_6.webp" type="image/webp">
+              <img src="image/placeholder_6.png" alt="Project 6" loading="lazy">
+            </picture>
+            <div class="card__badge">RAG</div>
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">RAGナレッジベース</h3>
+            <p class="card__text">社内文書を活用したRetrieval-Augmented Generation型の知識検索システム。</p>
+            <div class="card__tags">
+              <span class="tag">RAG</span>
+              <span class="tag">Vector DB</span>
+              <span class="tag">LangChain</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section about" id="about">
+    <div class="about__bg">
+      <picture>
+        <source srcset="assets/images/section-bg.webp" type="image/webp">
+        <img src="assets/images/section-bg.png" alt="" loading="lazy">
+      </picture>
+    </div>
+    <div class="container">
+      <div class="section__header">
+        <div class="section__divider"></div>
+        <p class="section__label">About</p>
+        <h2 class="section__title">プロフィール</h2>
+      </div>
+      <div class="about__content fade-in">
+        <div class="about__text">
+          <p>
+            AI開発エンジニアとして、最先端の機械学習・自然言語処理技術を活用したプロダクト開発に携わっています。
+          </p>
+          <p>
+            ユーザーにとって本当に価値のあるAIソリューションを、美しいインターフェースとともに提供することを大切にしています。
+          </p>
+        </div>
+        <div class="about__skills">
+          <h3>Skills</h3>
+          <div class="skills__grid">
+            <div class="skill">
+              <div class="skill__header">
+                <span class="skill__name">Machine Learning</span>
+                <span class="skill__level">90%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__fill" style="--width: 90%"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill__header">
+                <span class="skill__name">Natural Language Processing</span>
+                <span class="skill__level">85%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__fill" style="--width: 85%"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill__header">
+                <span class="skill__name">Frontend Development</span>
+                <span class="skill__level">80%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__fill" style="--width: 80%"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill__header">
+                <span class="skill__name">Cloud Architecture</span>
+                <span class="skill__level">75%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__fill" style="--width: 75%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact / CTA Section -->
+  <section class="section cta" id="contact">
+    <div class="cta__bg">
+      <picture>
+        <source srcset="assets/images/accent-bg.webp" type="image/webp">
+        <img src="assets/images/accent-bg.png" alt="" loading="lazy">
+      </picture>
+      <div class="cta__overlay"></div>
+    </div>
+    <div class="container">
+      <div class="cta__content fade-in">
+        <div class="section__divider"></div>
+        <p class="section__label">Contact</p>
+        <h2 class="cta__title">お気軽にご相談ください</h2>
+        <p class="cta__text">
+          AIを活用したプロジェクトについて、<br class="sp-only">
+          まずはお気軽にお問い合わせください。
+        </p>
+        <div class="cta__actions">
+          <a href="mailto:hello@example.com" class="btn btn--primary btn--lg">メールで問い合わせる</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <p class="footer__copyright">&copy; 2025 AI Development Portfolio. All rights reserved.</p>
+        <div class="footer__links">
+          <a href="#hero">Top</a>
+          <a href="#works">Works</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile Navigation Overlay -->
+  <div class="nav__overlay" id="navOverlay"></div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
