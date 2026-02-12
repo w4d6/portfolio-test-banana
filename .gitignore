@@ -9,3 +9,4 @@ nanobanana_api_usage.md
 design-prompt.yaml
 *.png
 !image/*.png
+!assets/images/og-image.png

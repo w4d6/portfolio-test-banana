@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="800" viewBox="0 0 1920 800">
+  <defs>
+    <linearGradient id="ctaGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff0f3"/>
+      <stop offset="50%" stop-color="#ffc0cb" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#e8a4b8" stop-opacity="0.2"/>
+    </linearGradient>
+    <radialGradient id="ctaGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#e8a4b8" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1920" height="800" fill="url(#ctaGrad)"/>
+  <rect width="1920" height="800" fill="url(#ctaGlow)"/>
+  <ellipse cx="960" cy="400" rx="600" ry="300" fill="#ffc0cb" opacity="0.06"/>
+</svg>

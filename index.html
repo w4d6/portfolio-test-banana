@@ -5,22 +5,40 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AI Development Portfolio</title>
   <meta name="description" content="AI開発の実績をまとめたポートフォリオサイト">
+
+  <!-- OGP Meta Tags -->
+  <meta property="og:title" content="AI Development Portfolio">
+  <meta property="og:description" content="AI開発の実績をまとめたポートフォリオサイト">
+  <meta property="og:image" content="assets/images/og-image.png">
+  <meta property="og:url" content="">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="AI Development Portfolio">
+  <meta name="twitter:description" content="AI開発の実績をまとめたポートフォリオサイト">
+  <meta name="twitter:image" content="assets/images/og-image.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+
+  <!-- Preload -->
+  <link rel="preload" as="image" href="assets/images/hero-bg.webp" type="image/webp">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <!-- Navigation -->
-  <nav class="nav" id="nav">
+  <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
     <div class="nav__inner">
       <a href="#" class="nav__logo">Portfolio</a>
-      <ul class="nav__links">
-        <li><a href="#works">Works</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
+      <ul class="nav__links" role="menubar">
+        <li role="none"><a href="#works" role="menuitem">Works</a></li>
+        <li role="none"><a href="#about" role="menuitem">About</a></li>
+        <li role="none"><a href="#contact" role="menuitem">Contact</a></li>
       </ul>
-      <button class="nav__hamburger" aria-label="Menu" aria-expanded="false">
+      <button class="nav__hamburger" aria-label="メニューを開く" aria-expanded="false">
         <span></span>
         <span></span>
         <span></span>
@@ -51,7 +69,7 @@
         <a href="#contact" class="btn btn--secondary">お問い合わせ</a>
       </div>
     </div>
-    <div class="hero__scroll">
+    <div class="hero__scroll" aria-hidden="true">
       <span>Scroll</span>
       <div class="hero__scroll-line"></div>
     </div>
@@ -70,10 +88,10 @@
       </div>
       <div class="works__grid">
         <article class="card fade-in" data-delay="0">
-          <div class="card__image">
+          <div class="card__image" role="button" tabindex="0" aria-label="AIチャットアシスタントの画像を拡大">
             <picture>
               <source srcset="image/placeholder_1.webp" type="image/webp">
-              <img src="image/placeholder_1.png" alt="Project 1" loading="lazy">
+              <img src="image/placeholder_1.png" alt="AIチャットアシスタント プロジェクト画面" loading="lazy">
             </picture>
             <div class="card__badge">AI Assistant</div>
           </div>
@@ -88,10 +106,10 @@
           </div>
         </article>
         <article class="card fade-in" data-delay="100">
-          <div class="card__image">
+          <div class="card__image" role="button" tabindex="0" aria-label="AI画像生成ツールの画像を拡大">
             <picture>
               <source srcset="image/placeholder_2.webp" type="image/webp">
-              <img src="image/placeholder_2.png" alt="Project 2" loading="lazy">
+              <img src="image/placeholder_2.png" alt="AI画像生成ツール プロジェクト画面" loading="lazy">
             </picture>
             <div class="card__badge">Image Gen</div>
           </div>
@@ -106,10 +124,10 @@
           </div>
         </article>
         <article class="card fade-in" data-delay="200">
-          <div class="card__image">
+          <div class="card__image" role="button" tabindex="0" aria-label="データ分析ダッシュボードの画像を拡大">
             <picture>
               <source srcset="image/placeholder_3.webp" type="image/webp">
-              <img src="image/placeholder_3.png" alt="Project 3" loading="lazy">
+              <img src="image/placeholder_3.png" alt="データ分析ダッシュボード プロジェクト画面" loading="lazy">
             </picture>
             <div class="card__badge">Analytics</div>
           </div>
@@ -124,10 +142,10 @@
           </div>
         </article>
         <article class="card fade-in" data-delay="0">
-          <div class="card__image">
+          <div class="card__image" role="button" tabindex="0" aria-label="業務自動化システムの画像を拡大">
             <picture>
               <source srcset="image/placeholder_4.webp" type="image/webp">
-              <img src="image/placeholder_4.png" alt="Project 4" loading="lazy">
+              <img src="image/placeholder_4.png" alt="業務自動化システム プロジェクト画面" loading="lazy">
             </picture>
             <div class="card__badge">Automation</div>
           </div>
@@ -142,10 +160,10 @@
           </div>
         </article>
         <article class="card fade-in" data-delay="100">
-          <div class="card__image">
+          <div class="card__image" role="button" tabindex="0" aria-label="音声認識アプリの画像を拡大">
             <picture>
               <source srcset="image/placeholder_5.webp" type="image/webp">
-              <img src="image/placeholder_5.png" alt="Project 5" loading="lazy">
+              <img src="image/placeholder_5.png" alt="音声認識アプリ プロジェクト画面" loading="lazy">
             </picture>
             <div class="card__badge">Voice AI</div>
           </div>
@@ -160,10 +178,10 @@
           </div>
         </article>
         <article class="card fade-in" data-delay="200">
-          <div class="card__image">
+          <div class="card__image" role="button" tabindex="0" aria-label="RAGナレッジベースの画像を拡大">
             <picture>
               <source srcset="image/placeholder_6.webp" type="image/webp">
-              <img src="image/placeholder_6.png" alt="Project 6" loading="lazy">
+              <img src="image/placeholder_6.png" alt="RAGナレッジベース プロジェクト画面" loading="lazy">
             </picture>
             <div class="card__badge">RAG</div>
           </div>
@@ -212,7 +230,7 @@
                 <span class="skill__name">Machine Learning</span>
                 <span class="skill__level">90%</span>
               </div>
-              <div class="skill__bar">
+              <div class="skill__bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" aria-label="Machine Learning">
                 <div class="skill__fill" style="--width: 90%"></div>
               </div>
             </div>
@@ -221,7 +239,7 @@
                 <span class="skill__name">Natural Language Processing</span>
                 <span class="skill__level">85%</span>
               </div>
-              <div class="skill__bar">
+              <div class="skill__bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" aria-label="Natural Language Processing">
                 <div class="skill__fill" style="--width: 85%"></div>
               </div>
             </div>
@@ -230,7 +248,7 @@
                 <span class="skill__name">Frontend Development</span>
                 <span class="skill__level">80%</span>
               </div>
-              <div class="skill__bar">
+              <div class="skill__bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" aria-label="Frontend Development">
                 <div class="skill__fill" style="--width: 80%"></div>
               </div>
             </div>
@@ -239,7 +257,7 @@
                 <span class="skill__name">Cloud Architecture</span>
                 <span class="skill__level">75%</span>
               </div>
-              <div class="skill__bar">
+              <div class="skill__bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" aria-label="Cloud Architecture">
                 <div class="skill__fill" style="--width: 75%"></div>
               </div>
             </div>
@@ -278,7 +296,7 @@
   <footer class="footer">
     <div class="container">
       <div class="footer__inner">
-        <p class="footer__copyright">&copy; 2025 AI Development Portfolio. All rights reserved.</p>
+        <p class="footer__copyright">&copy; 2026 AI Development Portfolio. All rights reserved.</p>
         <div class="footer__links">
           <a href="#hero">Top</a>
           <a href="#works">Works</a>
@@ -291,6 +309,15 @@
 
   <!-- Mobile Navigation Overlay -->
   <div class="nav__overlay" id="navOverlay"></div>
+
+  <!-- Image Modal -->
+  <div class="modal" id="imageModal" role="dialog" aria-modal="true" aria-label="画像プレビュー" hidden>
+    <div class="modal__overlay"></div>
+    <div class="modal__content">
+      <button class="modal__close" aria-label="閉じる">&times;</button>
+      <img class="modal__image" src="" alt="">
+    </div>
+  </div>
 
   <script src="js/main.js"></script>
 </body>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="heroGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff0f3"/>
+      <stop offset="40%" stop-color="#fafafa"/>
+      <stop offset="100%" stop-color="#ffc0cb" stop-opacity="0.3"/>
+    </linearGradient>
+    <radialGradient id="heroAccent" cx="70%" cy="30%" r="50%">
+      <stop offset="0%" stop-color="#e8a4b8" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#heroGrad)"/>
+  <rect width="1920" height="1080" fill="url(#heroAccent)"/>
+  <circle cx="1400" cy="300" r="200" fill="#ffc0cb" opacity="0.08"/>
+  <circle cx="400" cy="700" r="300" fill="#e8a4b8" opacity="0.05"/>
+</svg>
